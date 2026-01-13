@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="小学1年生向け漢字練習プリント作成サイト。80字の漢字から選んで印刷できます。">
+    <title>小学1年生 漢字れんしゅうプリント</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 選択画面 -->
+    <div class="app" id="app">
+        <header class="header">
+            <h1 class="title">📚 かんじ れんしゅうプリント</h1>
+            <p class="subtitle">1ねんせいで ならう かんじ 80こ</p>
+        </header>
+
+        <main class="main">
+            <!-- カテゴリー選択 -->
+            <section class="section">
+                <h2 class="section-title">カテゴリーをえらぶ</h2>
+                <div class="category-buttons" id="category-buttons">
+                    <!-- JSで生成 -->
+                </div>
+            </section>
+
+            <!-- 漢字一覧 -->
+            <section class="section">
+                <h2 class="section-title">
+                    かんじをえらぶ
+                    <span class="selected-count">（<span id="selected-count">0</span>こ せんたく）</span>
+                </h2>
+                <div class="selection-actions">
+                    <button class="btn btn-small" id="select-all-btn">ぜんぶえらぶ</button>
+                    <button class="btn btn-small btn-outline" id="clear-all-btn">ぜんぶけす</button>
+                </div>
+                <div class="kanji-grid" id="kanji-grid">
+                    <!-- JSで生成 -->
+                </div>
+            </section>
+
+            <!-- 印刷設定 -->
+            <section class="section">
+                <h2 class="section-title">いんさつせってい</h2>
+                <div class="settings">
+                    <div class="setting-item">
+                        <label class="setting-label">レイアウト:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="layout" value="1">
+                                <span>1ページに1こ（おおきい）</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="layout" value="2">
+                                <span>1ページに2こ</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="layout" value="3" checked>
+                                <span>1ページに3こ</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label class="setting-label">れんしゅうマス:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="boxes" value="3" checked>
+                                <span>3マス</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="boxes" value="5">
+                                <span>5マス</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="boxes" value="8">
+                                <span>8マス</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label class="setting-label">オプション:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="show-guide" checked>
+                                <span>うすい おてほん を ひょうじ</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="show-reading" checked>
+                                <span>よみかた を ひょうじ</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- プレビュー・印刷ボタン -->
+            <div class="action-buttons">
+                <button class="btn btn-primary btn-large" id="preview-btn" disabled>
+                    🖨️ プレビュー・いんさつ
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- 印刷プレビュー（モーダル） -->
+    <div class="modal" id="preview-modal">
+        <div class="modal-header">
+            <h2>いんさつプレビュー</h2>
+            <div class="modal-actions">
+                <button class="btn btn-primary" id="print-btn">🖨️ いんさつする</button>
+                <button class="btn btn-outline" id="close-modal-btn">とじる</button>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="print-preview" id="print-preview">
+                <!-- JSで生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 印刷用コンテンツ -->
+    <div class="print-content" id="print-content">
+        <!-- JSで生成 -->
+    </div>
+
+    <script src="app.js?v=3"></script>
+</body>
+
+</html>
