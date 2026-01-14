@@ -6,7 +6,7 @@ const kanjiData = [
   { kanji: "三", onyomi: ["サン"], kunyomi: ["み(つ)"], strokes: 3, category: "数字", strokePaths: [{ path: "M 25 25 H 75", type: "horizontal" }, { path: "M 20 50 H 80", type: "horizontal" }, { path: "M 15 75 H 85", type: "horizontal" }] },
   { kanji: "四", onyomi: ["シ"], kunyomi: ["よ(つ)", "よん"], strokes: 5, category: "数字", strokePaths: [{ path: "M 20 20 V 80", type: "vertical" }, { path: "M 20 20 H 80", type: "horizontal" }, { path: "M 80 20 V 80", type: "vertical" }, { path: "M 35 40 L 50 55 L 65 40", type: "bend" }, { path: "M 20 80 H 80", type: "horizontal" }] },
   { kanji: "五", onyomi: ["ゴ"], kunyomi: ["いつ(つ)"], strokes: 4, category: "数字", strokePaths: [{ path: "M 20 20 H 80", type: "horizontal" }, { path: "M 50 20 V 50", type: "vertical" }, { path: "M 25 50 H 75 L 70 75", type: "bend" }, { path: "M 20 80 H 80", type: "horizontal" }] },
-  { kanji: "六", onyomi: ["ロク"], kunyomi: ["む(つ)"], strokes: 4, category: "数字", strokePaths: [{ path: "M 50 15 L 52 18", type: "dot" }, { path: "M 20 35 H 80", type: "horizontal" }, { path: "M 35 45 L 20 80", type: "diagonal" }, { path: "M 55 45 L 80 80", type: "diagonal" }] },
+  { kanji: "六", onyomi: ["ロク"], kunyomi: ["む(つ)"], strokes: 4, category: "数字", strokePaths: [{ path: "M 48 12 L 52 22", type: "dot" }, { path: "M 20 35 H 80", type: "horizontal" }, { path: "M 35 45 L 20 80", type: "diagonal" }, { path: "M 55 45 L 80 80", type: "diagonal" }] },
   { kanji: "七", onyomi: ["シチ"], kunyomi: ["なな(つ)"], strokes: 2, category: "数字", strokePaths: [{ path: "M 20 30 H 80", type: "horizontal" }, { path: "M 55 15 L 50 50 L 25 85", type: "bend" }] },
   { kanji: "八", onyomi: ["ハチ"], kunyomi: ["や(つ)"], strokes: 2, category: "数字", strokePaths: [{ path: "M 45 20 L 15 80", type: "diagonal" }, { path: "M 55 20 L 85 80", type: "diagonal" }] },
   { kanji: "九", onyomi: ["キュウ"], kunyomi: ["ここの(つ)"], strokes: 2, category: "数字", strokePaths: [{ path: "M 35 20 L 35 55 L 80 65", type: "bend" }, { path: "M 60 15 L 25 85", type: "diagonal" }] },
@@ -26,7 +26,7 @@ const kanjiData = [
   { kanji: "山", onyomi: ["サン"], kunyomi: ["やま"], strokes: 3, category: "自然", strokePaths: [{ path: "M 50 15 V 85", type: "vertical" }, { path: "M 20 45 V 85", type: "vertical" }, { path: "M 80 45 V 85", type: "vertical" }] },
   { kanji: "川", onyomi: ["セン"], kunyomi: ["かわ"], strokes: 3, category: "自然", strokePaths: [{ path: "M 25 20 L 25 85", type: "vertical" }, { path: "M 50 15 L 50 85", type: "vertical" }, { path: "M 75 25 L 75 85", type: "vertical" }] },
   { kanji: "水", onyomi: ["スイ"], kunyomi: ["みず"], strokes: 4, category: "自然", strokePaths: [{ path: "M 50 10 V 90", type: "vertical" }, { path: "M 20 35 L 50 50", type: "diagonal" }, { path: "M 50 50 L 20 85", type: "diagonal" }, { path: "M 50 50 L 80 85", type: "diagonal" }] },
-  { kanji: "火", onyomi: ["カ"], kunyomi: ["ひ"], strokes: 4, category: "自然", strokePaths: [{ path: "M 25 45 L 27 48", type: "dot" }, { path: "M 75 45 L 73 48", type: "dot" }, { path: "M 40 20 L 25 85", type: "diagonal" }, { path: "M 60 20 L 75 85", type: "diagonal" }] },
+  { kanji: "火", onyomi: ["カ"], kunyomi: ["ひ"], strokes: 4, category: "自然", strokePaths: [{ path: "M 22 42 L 28 55", type: "dot" }, { path: "M 78 42 L 72 55", type: "dot" }, { path: "M 40 20 L 25 85", type: "diagonal" }, { path: "M 60 20 L 75 85", type: "diagonal" }] },
   { kanji: "木", onyomi: ["モク", "ボク"], kunyomi: ["き"], strokes: 4, category: "自然", strokePaths: [{ path: "M 15 35 H 85", type: "horizontal" }, { path: "M 50 10 V 90", type: "vertical" }, { path: "M 50 50 L 20 85", type: "diagonal" }, { path: "M 50 50 L 80 85", type: "diagonal" }] },
   { kanji: "林", onyomi: ["リン"], kunyomi: ["はやし"], strokes: 8, category: "自然", strokePaths: [{ path: "M 10 35 H 45", type: "horizontal" }, { path: "M 28 15 V 85", type: "vertical" }, { path: "M 28 50 L 12 75", type: "diagonal" }, { path: "M 28 50 L 44 75", type: "diagonal" }, { path: "M 55 35 H 90", type: "horizontal" }, { path: "M 72 15 V 90", type: "vertical" }, { path: "M 72 50 L 56 80", type: "diagonal" }, { path: "M 72 50 L 88 80", type: "diagonal" }] },
   { kanji: "森", onyomi: ["シン"], kunyomi: ["もり"], strokes: 12, category: "自然", strokePaths: [{ path: "M 30 25 H 70", type: "horizontal" }, { path: "M 50 10 V 50", type: "vertical" }, { path: "M 50 35 L 35 50", type: "diagonal" }, { path: "M 50 35 L 65 50", type: "diagonal" }, { path: "M 10 60 H 35", type: "horizontal" }, { path: "M 22 50 V 90", type: "vertical" }, { path: "M 22 70 L 12 85", type: "diagonal" }, { path: "M 22 70 L 32 85", type: "diagonal" }, { path: "M 65 60 H 90", type: "horizontal" }, { path: "M 78 50 V 90", type: "vertical" }, { path: "M 78 70 L 68 85", type: "diagonal" }, { path: "M 78 70 L 88 85", type: "diagonal" }] },
@@ -44,7 +44,7 @@ const kanjiData = [
   // 人・体（12字）
   { kanji: "人", onyomi: ["ジン", "ニン"], kunyomi: ["ひと"], strokes: 2, category: "人・体", strokePaths: [{ path: "M 50 15 L 20 85", type: "diagonal" }, { path: "M 45 45 L 80 85", type: "diagonal" }] },
   { kanji: "大", onyomi: ["ダイ", "タイ"], kunyomi: ["おお(きい)"], strokes: 3, category: "人・体", strokePaths: [{ path: "M 15 35 H 85", type: "horizontal" }, { path: "M 50 15 L 20 85", type: "diagonal" }, { path: "M 50 35 L 80 85", type: "diagonal" }] },
-  { kanji: "小", onyomi: ["ショウ"], kunyomi: ["ちい(さい)", "こ"], strokes: 3, category: "人・体", strokePaths: [{ path: "M 50 10 V 90", type: "vertical" }, { path: "M 25 40 L 27 55", type: "dot" }, { path: "M 75 40 L 73 55", type: "dot" }] },
+  { kanji: "小", onyomi: ["ショウ"], kunyomi: ["ちい(さい)", "こ"], strokes: 3, category: "人・体", strokePaths: [{ path: "M 50 10 V 90", type: "vertical" }, { path: "M 22 38 L 30 58", type: "dot" }, { path: "M 78 38 L 70 58", type: "dot" }] },
   { kanji: "子", onyomi: ["シ", "ス"], kunyomi: ["こ"], strokes: 3, category: "人・体", strokePaths: [{ path: "M 25 25 H 75 L 30 60", type: "bend" }, { path: "M 50 25 V 85", type: "vertical" }, { path: "M 25 60 H 75", type: "horizontal" }] },
   { kanji: "女", onyomi: ["ジョ"], kunyomi: ["おんな"], strokes: 3, category: "人・体", strokePaths: [{ path: "M 55 15 L 25 55 L 75 80", type: "bend" }, { path: "M 50 45 L 80 15", type: "diagonal" }, { path: "M 20 80 H 80", type: "horizontal" }] },
   { kanji: "男", onyomi: ["ダン", "ナン"], kunyomi: ["おとこ"], strokes: 7, category: "人・体", strokePaths: [{ path: "M 20 15 V 45", type: "vertical" }, { path: "M 20 15 H 80", type: "horizontal" }, { path: "M 80 15 V 45", type: "vertical" }, { path: "M 50 15 V 45", type: "vertical" }, { path: "M 20 45 H 80", type: "horizontal" }, { path: "M 50 45 V 90", type: "vertical" }, { path: "M 25 65 H 75", type: "horizontal" }] },
@@ -84,15 +84,15 @@ const kanjiData = [
   { kanji: "立", onyomi: ["リツ"], kunyomi: ["た(つ)"], strokes: 5, category: "その他", strokePaths: [{ path: "M 50 10 L 52 15", type: "dot" }, { path: "M 20 30 H 80", type: "horizontal" }, { path: "M 35 30 V 60", type: "vertical" }, { path: "M 65 30 V 60", type: "vertical" }, { path: "M 15 85 H 85", type: "horizontal" }] },
   { kanji: "見", onyomi: ["ケン"], kunyomi: ["み(る)"], strokes: 7, category: "その他", strokePaths: [{ path: "M 25 15 V 60", type: "vertical" }, { path: "M 25 15 H 75", type: "horizontal" }, { path: "M 75 15 V 60", type: "vertical" }, { path: "M 25 35 H 75", type: "horizontal" }, { path: "M 25 60 H 75", type: "horizontal" }, { path: "M 35 60 L 20 90", type: "diagonal" }, { path: "M 65 60 L 80 90", type: "diagonal" }] },
   { kanji: "音", onyomi: ["オン", "イン"], kunyomi: ["おと", "ね"], strokes: 9, category: "その他", strokePaths: [{ path: "M 50 10 L 52 15", type: "dot" }, { path: "M 20 25 H 80", type: "horizontal" }, { path: "M 50 25 V 45", type: "vertical" }, { path: "M 25 45 H 75", type: "horizontal" }, { path: "M 25 55 V 90", type: "vertical" }, { path: "M 25 55 H 75", type: "horizontal" }, { path: "M 75 55 V 90", type: "vertical" }, { path: "M 25 72 H 75", type: "horizontal" }, { path: "M 25 90 H 75", type: "horizontal" }] },
-  { kanji: "気", onyomi: ["キ"], kunyomi: ["き"], strokes: 6, category: "その他", strokePaths: [{ path: "M 20 20 H 75", type: "horizontal" }, { path: "M 30 35 H 70", type: "horizontal" }, { path: "M 40 50 H 60", type: "horizontal" }, { path: "M 80 20 L 70 50 L 55 90", type: "bend" }, { path: "M 30 65 L 32 68", type: "dot" }, { path: "M 50 65 L 48 85", type: "diagonal" }] },
+  { kanji: "気", onyomi: ["キ"], kunyomi: ["き"], strokes: 6, category: "その他", strokePaths: [{ path: "M 20 20 H 75", type: "horizontal" }, { path: "M 30 35 H 70", type: "horizontal" }, { path: "M 40 50 H 60", type: "horizontal" }, { path: "M 80 20 L 70 50 L 55 90", type: "bend" }, { path: "M 28 62 L 35 75", type: "dot" }, { path: "M 50 65 L 48 85", type: "diagonal" }] },
   { kanji: "天", onyomi: ["テン"], kunyomi: ["あめ", "あま"], strokes: 4, category: "その他", strokePaths: [{ path: "M 15 20 H 85", type: "horizontal" }, { path: "M 20 50 H 80", type: "horizontal" }, { path: "M 50 20 L 20 90", type: "diagonal" }, { path: "M 50 50 L 80 90", type: "diagonal" }] },
   { kanji: "円", onyomi: ["エン"], kunyomi: ["まる(い)"], strokes: 4, category: "その他", strokePaths: [{ path: "M 25 15 V 85 L 75 85", type: "bend" }, { path: "M 25 15 H 75", type: "horizontal" }, { path: "M 75 15 V 75", type: "vertical" }, { path: "M 50 25 V 85", type: "vertical" }] },
-  { kanji: "糸", onyomi: ["シ"], kunyomi: ["いと"], strokes: 6, category: "その他", strokePaths: [{ path: "M 55 10 L 35 35", type: "diagonal" }, { path: "M 65 25 L 35 35", type: "diagonal" }, { path: "M 35 35 L 50 50 L 30 65", type: "bend" }, { path: "M 25 75 L 27 78", type: "dot" }, { path: "M 50 75 L 52 78", type: "dot" }, { path: "M 75 75 L 77 78", type: "dot" }] },
+  { kanji: "糸", onyomi: ["シ"], kunyomi: ["いと"], strokes: 6, category: "その他", strokePaths: [{ path: "M 55 10 L 35 35", type: "diagonal" }, { path: "M 65 25 L 35 35", type: "diagonal" }, { path: "M 35 35 L 50 50 L 30 65", type: "bend" }, { path: "M 22 72 L 30 85", type: "dot" }, { path: "M 47 72 L 55 85", type: "dot" }, { path: "M 72 72 L 80 85", type: "dot" }] },
   { kanji: "竹", onyomi: ["チク"], kunyomi: ["たけ"], strokes: 6, category: "その他", strokePaths: [{ path: "M 30 15 L 20 45", type: "diagonal" }, { path: "M 30 15 L 35 35", type: "diagonal" }, { path: "M 30 45 V 90", type: "vertical" }, { path: "M 70 15 L 60 45", type: "diagonal" }, { path: "M 70 15 L 75 35", type: "diagonal" }, { path: "M 70 45 V 90", type: "vertical" }] },
   { kanji: "貝", onyomi: ["バイ"], kunyomi: ["かい"], strokes: 7, category: "その他", strokePaths: [{ path: "M 25 15 V 70", type: "vertical" }, { path: "M 25 15 H 75", type: "horizontal" }, { path: "M 75 15 V 70", type: "vertical" }, { path: "M 25 40 H 75", type: "horizontal" }, { path: "M 25 70 H 75", type: "horizontal" }, { path: "M 35 70 L 20 90", type: "diagonal" }, { path: "M 65 70 L 80 90", type: "diagonal" }] },
   { kanji: "車", onyomi: ["シャ"], kunyomi: ["くるま"], strokes: 7, category: "その他", strokePaths: [{ path: "M 20 20 H 80", type: "horizontal" }, { path: "M 25 20 V 65", type: "vertical" }, { path: "M 75 20 V 65", type: "vertical" }, { path: "M 25 42 H 75", type: "horizontal" }, { path: "M 25 65 H 75", type: "horizontal" }, { path: "M 50 15 V 90", type: "vertical" }, { path: "M 15 85 H 85", type: "horizontal" }] },
-  { kanji: "金", onyomi: ["キン"], kunyomi: ["かね"], strokes: 8, category: "その他", strokePaths: [{ path: "M 50 10 V 30", type: "vertical" }, { path: "M 25 30 H 75", type: "horizontal" }, { path: "M 50 30 L 20 55", type: "diagonal" }, { path: "M 50 30 L 80 55", type: "diagonal" }, { path: "M 35 55 L 37 60", type: "dot" }, { path: "M 65 55 L 67 60", type: "dot" }, { path: "M 50 55 V 90", type: "vertical" }, { path: "M 15 90 H 85", type: "horizontal" }] },
-  { kanji: "雨", onyomi: ["ウ"], kunyomi: ["あめ"], strokes: 8, category: "その他", strokePaths: [{ path: "M 20 20 V 85", type: "vertical" }, { path: "M 20 20 H 80", type: "horizontal" }, { path: "M 80 20 V 85", type: "vertical" }, { path: "M 50 20 V 40", type: "vertical" }, { path: "M 32 50 L 34 55", type: "dot" }, { path: "M 50 50 L 52 55", type: "dot" }, { path: "M 68 50 L 70 55", type: "dot" }, { path: "M 50 65 L 52 70", type: "dot" }] },
+  { kanji: "金", onyomi: ["キン"], kunyomi: ["かね"], strokes: 8, category: "その他", strokePaths: [{ path: "M 50 10 V 30", type: "vertical" }, { path: "M 25 30 H 75", type: "horizontal" }, { path: "M 50 30 L 20 55", type: "diagonal" }, { path: "M 50 30 L 80 55", type: "diagonal" }, { path: "M 32 53 L 38 66", type: "dot" }, { path: "M 68 53 L 62 66", type: "dot" }, { path: "M 50 55 V 90", type: "vertical" }, { path: "M 15 90 H 85", type: "horizontal" }] },
+  { kanji: "雨", onyomi: ["ウ"], kunyomi: ["あめ"], strokes: 8, category: "その他", strokePaths: [{ path: "M 20 20 V 85", type: "vertical" }, { path: "M 20 20 H 80", type: "horizontal" }, { path: "M 80 20 V 85", type: "vertical" }, { path: "M 50 20 V 40", type: "vertical" }, { path: "M 30 48 L 36 60", type: "dot" }, { path: "M 48 48 L 54 60", type: "dot" }, { path: "M 66 48 L 72 60", type: "dot" }, { path: "M 48 68 L 54 80", type: "dot" }] },
   { kanji: "町", onyomi: ["チョウ"], kunyomi: ["まち"], strokes: 7, category: "その他", strokePaths: [{ path: "M 20 15 V 50", type: "vertical" }, { path: "M 20 15 H 45", type: "horizontal" }, { path: "M 45 15 V 50", type: "vertical" }, { path: "M 20 50 H 45", type: "horizontal" }, { path: "M 32 30 H 45", type: "horizontal" }, { path: "M 55 15 H 85", type: "horizontal" }, { path: "M 70 15 V 90", type: "vertical" }] },
   { kanji: "村", onyomi: ["ソン"], kunyomi: ["むら"], strokes: 7, category: "その他", strokePaths: [{ path: "M 15 30 H 45", type: "horizontal" }, { path: "M 30 15 V 90", type: "vertical" }, { path: "M 30 50 L 15 80", type: "diagonal" }, { path: "M 30 50 L 45 80", type: "diagonal" }, { path: "M 60 20 H 85", type: "horizontal" }, { path: "M 55 45 H 90", type: "horizontal" }, { path: "M 72 20 V 90", type: "vertical" }] },
   { kanji: "早", onyomi: ["ソウ"], kunyomi: ["はや(い)"], strokes: 6, category: "その他", strokePaths: [{ path: "M 25 15 V 55", type: "vertical" }, { path: "M 25 15 H 75", type: "horizontal" }, { path: "M 75 15 V 55", type: "vertical" }, { path: "M 25 35 H 75", type: "horizontal" }, { path: "M 25 55 H 75", type: "horizontal" }, { path: "M 50 55 V 90", type: "vertical" }] }
@@ -112,20 +112,74 @@ const categories = [
   { id: "その他", name: "その他（そのほか）", icon: "✨" }
 ];
 
-// SVG生成関数（指定した画数までを描画）
+// 書き順画像マッピング（漢字 → 画像ファイル名）
+const strokeOrderImages = {
+  "一": "stroke_ichi_1768341556819.png",
+  "二": "stroke_ni_1768341571318.png",
+  "三": "stroke_san_1768341585417.png",
+  "四": "stroke_shi_1768341601005.png",
+  "五": "stroke_go_1768341614454.png",
+  "六": "stroke_roku_1768341635358.png",
+  "七": "stroke_shichi_1768341649446.png",
+  "八": "stroke_hachi_1768341665177.png",
+  "九": "stroke_kyuu_1768341679247.png",
+  "十": "stroke_juu_1768341695912.png",
+  "百": "stroke_hyaku_1768341715801.png",
+  "上": "stroke_ue_1768341936950.png",
+  "下": "stroke_shita_1768341952332.png",
+  "左": "stroke_hidari_1768341967535.png",
+  "右": "stroke_migi_1768341982859.png",
+  "中": "stroke_naka_1768341998811.png",
+  "入": "stroke_nyuu_1768379449236.png",
+  "出": "stroke_shutsu_1768379472197.png",
+  "山": "stroke_yama_1768379874511.png",
+  "川": "stroke_kawa_1768379896621.png",
+  "水": "stroke_mizu_1768379913930.png",
+  "火": "stroke_hi_1768379959509.png",
+  "木": "stroke_ki_1768379979159.png",
+  "林": "stroke_hayashi_1768379995880.png",
+  "森": "stroke_mori_1768380039408.png",
+  "田": "stroke_ta_1768380061056.png",
+  "土": "stroke_tsuchi_1768380077829.png",
+  "石": "stroke_ishi_1768380123982.png",
+  "空": "stroke_sora_1768380144281.png",
+  "日": "stroke_nichi_1768380324425.png",
+  "月": "stroke_getsu_1768380346299.png",
+  "年": "stroke_nen_1768380362887.png",
+  "夕": "stroke_yuu_1768380380749.png",
+  "雨": "stroke_ame.png"
+};
+
+// 書き順画像があるかチェック
+function hasStrokeOrderImage(kanji) {
+  return strokeOrderImages.hasOwnProperty(kanji);
+}
+
+// 書き順画像のパスを取得
+function getStrokeOrderImagePath(kanji) {
+  if (hasStrokeOrderImage(kanji)) {
+    return `assets/stroke_order/${strokeOrderImages[kanji]}`;
+  }
+  return null;
+}
+
+// SVG生成関数（画像がない漢字用のフォールバック）
 function generateStrokeSvg(k, step) {
   if (!k.strokePaths) return k.kanji;
   let paths = '';
 
-  // ガイド（薄いグレー）
+  // ストローク幅を画数に応じて調整（多い漢字は細めに）
+  const baseWidth = k.strokes > 8 ? 5 : 6;
+
+  // ガイド（非常に薄いグレー）
   k.strokePaths.forEach(p => {
-    paths += `<path d="${p.path}" fill="none" stroke="#eee" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />`;
+    paths += `<path d="${p.path}" fill="none" stroke="#f0f0f0" stroke-width="${baseWidth}" stroke-linecap="round" stroke-linejoin="round" />`;
   });
 
-  // 黒く描画
+  // 黒く描画（現在のステップまで）
   for (let i = 0; i < step; i++) {
     if (i < k.strokePaths.length) {
-      paths += `<path d="${k.strokePaths[i].path}" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />`;
+      paths += `<path d="${k.strokePaths[i].path}" fill="none" stroke="#333" stroke-width="${baseWidth}" stroke-linecap="round" stroke-linejoin="round" />`;
     }
   }
 
@@ -220,72 +274,60 @@ clearAllBtn.addEventListener('click', () => {
 
 // 設定取得
 function getSettings() {
-  const layout = document.querySelector('input[name="layout"]:checked').value;
   const boxes = document.querySelector('input[name="boxes"]:checked').value;
   const showGuide = document.getElementById('show-guide').checked;
   const showReading = document.getElementById('show-reading').checked;
-  return { layout: parseInt(layout), boxes: parseInt(boxes), showGuide, showReading };
+  return { boxes: parseInt(boxes), showGuide, showReading };
 }
 
-// 印刷ページ生成
+// キャラクターデコレーション生成
+function generateDecorations(pageIndex) {
+  const chars = [0, 1, 2].map(i => {
+    const charNum = ((pageIndex + i) % 4) + 1;
+    return `<div class="char-crop char-${charNum} char-pos-${i}"><img src="assets/characters_v2.png"></div>`;
+  }).join('');
+  return `<div class="decorations">${chars}</div>`;
+}
+
+// 印刷ページ生成（1漢字につき2ページ: 練習用 + 書き順用）
 function generatePrintPages(forPrint = false) {
   const settings = getSettings();
   const kanjiList = Array.from(selectedKanji).map(k => kanjiData.find(d => d.kanji === k));
-  const pages = [];
+  let pagesHtml = '';
+  let pageCount = 0;
 
-  const perPage = settings.layout;
-  for (let i = 0; i < kanjiList.length; i += perPage) {
-    pages.push(kanjiList.slice(i, i + perPage));
-  }
+  kanjiList.forEach((k, kanjiIndex) => {
+    const onyomiText = k.onyomi.length > 0 ? k.onyomi.join('、') : '−';
+    const kunyomiText = k.kunyomi.length > 0 ? k.kunyomi.join('、') : '−';
 
-  return pages.map((pageKanji, pageIndex) => {
-    const kanjiBlocks = pageKanji.map(k => {
-      const onyomiText = k.onyomi.length > 0 ? k.onyomi.join('、') : '−';
-      const kunyomiText = k.kunyomi.length > 0 ? k.kunyomi.join('、') : '−';
+    // ===== 1ページ目: 練習用 =====
+    const practiceBoxes = Array.from({ length: settings.boxes }, (_, i) =>
+      `<div class="practice-box">${settings.showGuide ? `<span class="guide">${k.kanji}</span>` : ''}</div>`
+    ).join('');
 
-      // 書き順SVG生成
-      const strokeBoxes = Array.from({ length: k.strokes }, (_, i) => {
-        const step = i + 1;
-        const svgs = generateStrokeSvg(k, step);
-        return `<div class="stroke-box"><span class="stroke-num">${step}</span>${svgs}</div>`;
-      }).join('');
-
-      // 練習マス
-      const boxes = Array.from({ length: settings.boxes }, (_, i) =>
-        `<div class="practice-box">${settings.showGuide ? `<span class="guide">${k.kanji}</span>` : ''}</div>`
-      ).join('');
-
-      return `
-        <div class="kanji-block">
-          <div class="kanji-info">
-            <div class="kanji-display">${k.kanji}</div>
-            ${settings.showReading ? `
-              <div class="kanji-reading">
-                <p>おんよみ: ${onyomiText}</p>
-                <p>くんよみ: ${kunyomiText}</p>
-                <p>${k.strokes}かく</p>
-              </div>
-            ` : `<div class="kanji-reading"><p>${k.strokes}かく</p></div>`}
-          </div>
-          <div class="stroke-order-area">
-            <div class="area-label">かきじゅん</div>
-            <div class="stroke-boxes">${strokeBoxes}</div>
-          </div>
-          <div class="practice-area">
-            <div class="area-label">れんしゅう</div>
-            <div class="practice-boxes">${boxes}</div>
-          </div>
-        </div>
-      `;
-    }).join('');
-
-    return `
-      <div class="print-page layout-${settings.layout}">
+    pagesHtml += `
+      <div class="print-page practice-page">
+        ${generateDecorations(pageCount++)}
         <div class="print-page-header">
           <h1 class="print-page-title">かんじ れんしゅうプリント</h1>
         </div>
         <div class="print-kanji-section">
-          ${kanjiBlocks}
+          <div class="kanji-block">
+            <div class="kanji-info">
+              <div class="kanji-display-large">${k.kanji}</div>
+              ${settings.showReading ? `
+                <div class="kanji-reading-large">
+                  <p>おんよみ: ${onyomiText}</p>
+                  <p>くんよみ: ${kunyomiText}</p>
+                  <p>${k.strokes}かく</p>
+                </div>
+              ` : `<div class="kanji-reading-large"><p>${k.strokes}かく</p></div>`}
+            </div>
+            <div class="practice-area-large">
+              <div class="area-label">れんしゅう</div>
+              <div class="practice-boxes-large">${practiceBoxes}</div>
+            </div>
+          </div>
         </div>
         <div class="print-page-footer">
           <span>なまえ: _______________</span>
@@ -293,7 +335,42 @@ function generatePrintPages(forPrint = false) {
         </div>
       </div>
     `;
-  }).join('');
+
+    // ===== 2ページ目: 書き順用 =====
+    let strokeContent = '';
+    const imagePath = getStrokeOrderImagePath(k.kanji);
+
+    if (imagePath) {
+      // 画像がある場合は大きく表示
+      strokeContent = `<img src="${imagePath}" alt="${k.kanji}の書き順" class="stroke-order-image">`;
+    } else {
+      // 画像がない場合は準備中メッセージ
+      strokeContent = `
+        <div class="stroke-preparing">
+          <div class="stroke-kanji-preview">${k.kanji}</div>
+          <p class="preparing-text">かきじゅん がぞう じゅんびちゅう</p>
+        </div>
+      `;
+    }
+
+    pagesHtml += `
+      <div class="print-page stroke-page">
+        ${generateDecorations(pageCount++)}
+        <div class="print-page-header">
+          <h1 class="print-page-title">かきじゅん 「${k.kanji}」</h1>
+        </div>
+        <div class="stroke-section">
+          ${strokeContent}
+        </div>
+        <div class="print-page-footer">
+          <span>${k.strokes}かく</span>
+          <span></span>
+        </div>
+      </div>
+    `;
+  });
+
+  return pagesHtml;
 }
 
 // イベントリスナー
