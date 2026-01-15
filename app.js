@@ -346,6 +346,44 @@ function generatePrintPages(forPrint = false) {
     const onyomiText = k.onyomi.length > 0 ? k.onyomi.join('、') : '−';
     const kunyomiText = k.kunyomi.length > 0 ? k.kunyomi.join('、') : '−';
 
+    // ===== すべてのカテゴリーを1ページにまとめたレイアウト =====
+    if (k.category === '数字' || k.category === '方向' || k.category === '自然' ||
+      k.category === '時間' || k.category === '人・体' || k.category === '生物' ||
+      k.category === '色' || k.category === '学校' || k.category === 'その他') {
+      const practiceBoxes = Array.from({ length: settings.boxes }, (_, i) =>
+        `<div class="practice-box">${settings.showGuide ? `<span class="guide">${k.kanji}</span>` : ''}</div>`
+      ).join('');
+      const imagePath = getStrokeOrderImagePath(k.kanji);
+      let strokeContent = imagePath
+        ? `<img src="${imagePath}" alt="${k.kanji}の書き順" class="stroke-order-image-compact">`
+        : `<div class="stroke-preparing-compact"><p>じゅんびちゅう</p></div>`;
+
+      pagesHtml += `
+        <div class="print-page combined-page">
+          ${generateDecorations(pageCount++)}
+          <div class="print-page-header"><h1 class="print-page-title">かんじ れんしゅうプリント</h1></div>
+          <div class="combined-content">
+            <div class="stroke-section-compact">
+              <div class="stroke-title-compact">かきじゅん 「${k.kanji}」</div>
+              <div class="stroke-content-compact">${strokeContent}</div>
+            </div>
+            <div class="practice-section-compact">
+              <div class="kanji-info-compact">
+                <div class="kanji-display-compact">${k.kanji}</div>
+                ${settings.showReading ? `<div class="kanji-reading-compact"><p>おんよみ: ${onyomiText}</p><p>くんよみ: ${kunyomiText}</p><p>${k.strokes}かく</p></div>` : `<div class="kanji-reading-compact"><p>${k.strokes}かく</p></div>`}
+              </div>
+              <div class="practice-area-compact">
+                <div class="area-label">れんしゅう</div>
+                <div class="practice-boxes-compact">${practiceBoxes}</div>
+              </div>
+            </div>
+          </div>
+          <div class="print-page-footer"><span>なまえ: _______________</span><span>ひづけ: _______________</span></div>
+        </div>
+      `;
+      return; // 1ページ完結レイアウトの処理を終了
+    }
+
     // ===== 1ページ目: 練習用 =====
     const practiceBoxes = Array.from({ length: settings.boxes }, (_, i) =>
       `<div class="practice-box">${settings.showGuide ? `<span class="guide">${k.kanji}</span>` : ''}</div>`

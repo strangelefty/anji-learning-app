@@ -911,3 +911,106 @@ body {
     color: var(--gray-500);
     text-align: center;
 }
+
+/* ===== Combined Page Layout (書き順 + 練習 1ページ) ===== */
+.combined-page {
+    position: relative;
+    width: 210mm;
+    min-height: 297mm;
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15mm;
+    display: flex;
+    flex-direction: column;
+}
+
+.combined-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8mm;
+}
+
+/* 書き順セクション（上部・コンパクト） */
+.stroke-section-compact {
+    padding: 8mm;
+    background: #F9F9F9;
+    border-radius: 4mm;
+    border: 1px solid var(--gray-300);
+}
+
+.stroke-title-compact {
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--gray-700);
+    margin-bottom: 5mm;
+    text-align: center;
+}
+
+.stroke-content-compact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stroke-order-image-compact {
+    max-width: 120mm;
+    max-height: 75mm;
+    object-fit: contain;
+}
+
+.stroke-preparing-compact {
+    text-align: center;
+    padding: 20mm;
+    color: var(--gray-400);
+}
+
+/* 練習セクション（下部） */
+.practice-section-compact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanji-info-compact {
+    display: flex;
+    align-items: center;
+    gap: 8mm;
+    margin-bottom: 6mm;
+}
+
+.kanji-display-compact {
+    width: 50mm;
+    height: 50mm;
+    border: 3px solid var(--gray-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70pt;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.kanji-reading-compact {
+    font-size: 12pt;
+    line-height: 2;
+}
+
+.kanji-reading-compact p {
+    margin: 0;
+}
+
+.practice-area-compact {
+    flex: 1;
+}
+
+.practice-boxes-compact {
+    display: flex;
+    gap: 4mm;
+    flex-wrap: wrap;
+}
+
+.practice-boxes-compact .practice-box {
+    width: 28mm;
+    height: 28mm;
+}
